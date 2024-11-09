@@ -1,4 +1,5 @@
 import localFont from "next/font/local";
+import Image from "next/image";
 const weather = localFont({
   src: "./fonts/Merriweather-BoldItalic.ttf",
   variable: "--font-weather",
@@ -24,7 +25,7 @@ export default function Home() {
 </p>
   <div className="w-full max-w-md md:max-w-lg lg:max-w-xl mb-8">
     {/* <Image src="/hero-image.png" alt="Link Shortener" layout="responsive" width={600} height={400} className="rounded-lg shadow-lg" /> */}
-    <img src="https://www.capsulink.com/assets/img/hero/capsulink-short-link-personalization-by-device-location-language-time.svg" class="w-full h-auto max-h-[500px] object-cover" />
+    <Image src="https://www.capsulink.com/assets/img/hero/capsulink-short-link-personalization-by-device-location-language-time.svg" class="w-full h-auto max-h-[500px] object-cover" />
   </div>
   <button className="mt-4 px-6 py-3 bg-green-500 text-white font-semibold rounded-full shadow-lg hover:bg-green-700 transition duration-300">
     Get Started

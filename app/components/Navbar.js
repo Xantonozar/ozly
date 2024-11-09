@@ -46,7 +46,7 @@ const Navbar = () => {
    
   </div>
   <div className="text-white text-2xl cursor-pointer md:hidden" onClick={toggleMenu}>
-    &#9776;
+  <Link href="https://www.flaticon.com/free-icons/hamburger" title="hamburger icons">Hamburger icons created by See Icons - Flaticon</Link>
   </div>
 </div>
 <div className={`sidebar md:hidden transform transition-transform duration-300 ${isOpen ? 'translate-x-0 flex' : 'translate-x-full hidden'}  flex-col`} style={{ height: '100%', width: '50.66%' }}>
