@@ -51,7 +51,7 @@ const Navbar = () => {
   <Image src="/menu-bar.png" alt="Hamburger Menu" width={30} height={30} />
   </div>
 </div>
-<div className={`sidebar md:hidden transform transition-transform duration-300 ${isOpen ? 'translate-x-0 flex' : 'translate-x-full hidden'}  flex-col`} style={{ height: '100%', width: '50.66%' }}>
+<div className={`sidebar md:hidden transform transition-transform duration-300 ${isOpen ? 'translate-x-0 flex' : 'translate-x-full hidden'}  flex-col`} style={{ height: '100%', width: '100%' }}>
   <nav className="flex flex-col mt-10">
     <Link href="/home" className="py-2 px-4 hover:bg-green-900">Home</Link>
     <Link href="/about" className="py-2 px-4 hover:bg-green-900">About</Link>
