@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -46,7 +47,8 @@ const Navbar = () => {
    
   </div>
   <div className="text-white text-2xl cursor-pointer md:hidden" onClick={toggleMenu}>
-  <Link href="https://www.flaticon.com/free-icons/hamburger" title="hamburger icons">Hamburger icons created by See Icons - Flaticon</Link>
+  
+  <Image src="/strip.png" alt="Hamburger Menu" width={30} height={30} />
   </div>
 </div>
 <div className={`sidebar md:hidden transform transition-transform duration-300 ${isOpen ? 'translate-x-0 flex' : 'translate-x-full hidden'}  flex-col`} style={{ height: '100%', width: '50.66%' }}>
